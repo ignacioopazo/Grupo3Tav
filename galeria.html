@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bmx Store</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/sliderimagenes.css">
+        <link rel="stylesheet" href="css/Galeria.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+        <!--Link para la generacion del slider-->        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+
+    
+    </head>
+
+    <body>
+        <!--Menu  header-->
+        <header id="header">
+            <img src="img/menuiconwhite.png" alt="menu" class="menu" id="menu">
+            <div class="contenedor_logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="logo" class="logo">
+                </a>
+            </div>
+            <div class="contenedor_titulo">
+                <h2>  BMX STORE  </h2> 
+            </div>
+            <div>
+                <!--Opciones de navegador-->
+                <nav id="nav">
+                    <ul>
+                        <li>
+                            <a href="index.html" target="_blank">MENU</a>
+                        </li>
+                        <li>
+                            <a href="Nosotros.html" target="_blank">NOSOTROS</a>
+                        </li>
+                        <li>
+                            <a href="contacto.html" target="_blank" > CONTACTO</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!--Galeria de imagenes Slider-->
+        <div class="slider">
+            <div>
+                <img src="img/ImgSlider1.jpg" alt="">
+            </div>
+            <div>
+                <img src="img/ImgSlider2.jpg" alt="">
+            </div>
+            <div>
+                <img src="img/ImgSlider3.jpg" alt="">
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+      
+        <!--Modificacion de slider-->
+        <script>
+          $(document).ready(function(){
+            $('.slider').bxSlider({
+                mode: "fade",
+                auto: true,
+                pause: 2000
+            });
+          });
+        </script>
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+        
+        <!--Galeria de imagenes-->
+        <h1 class="trucos">Trucos y acrobacias con una bmx</h1>
+        <div class="galeria">
+            <a data-fancybox="gallery" href="img/TrucoBmx1.jpg">
+                <img src="img/TrucoBmx1.jpg">
+            </a>
+            <a data-fancybox="gallery" href="img/TrucoBmx7.jpg">
+                <img src="img/TrucoBmx7.jpg">
+            </a>
+            <a data-fancybox="gallery" href="img/TrucoBmx3.jpg">
+                <img src="img/TrucoBmx3.jpg">
+            </a>
+            <a data-fancybox="gallery" href="img/TrucoBmx2.jpg">
+                <img src="img/TrucoBmx2.jpg">
+            </a>
+            <a data-fancybox="gallery" href="img/ManitosTruco1.jpg">
+                <img src="img/ManitosTruco1.jpg">
+            </a>
+            <a data-fancybox="gallery" href="img/TrucoBmx4.jpg">
+                <img src="img/TrucoBmx4.jpg">
+            </a>
+            <a data-fancybox="gallery" href="img/TrucoBmx5.jpg">
+                <img src="img/TrucoBmx5.jpg">
+            </a>
+            <a data-fancybox="gallery" href="img/TrucoBmx6.jpg">
+                <img src="img/TrucoBmx6.jpg">
+            </a>
+        </div>
+
+        <footer>
+            <div class="container">
+
+                <a class="face" href="https://www.facebook.com/" target="_blanck"> 
+                    <img src="img/Face.png" alt="">
+                </a>
+                <a class="face" href="https://www.instagram.com/" target="_blanck"> 
+                    <img src="img/instagram.png" alt="">
+                </a>
+                <a class="face" href="https://www.twitter.com/?lang=es." target="_blanck"> 
+                    <img src="img/gorjeo.png" alt="">
+                </a>
+                <a class="face" href="https://www.youtube.com/" target="_blanck"> 
+                    <img src="img/youtube.png" alt="">
+                </a>
+            </div>
+
+            <div class="nosotros">
+                <li>
+                    <a href="Nosotros.html" target="_blank">CONOCENOS</a>
+                </li>
+            </div>
+
+
+        </footer>
+    </body>
+</html>

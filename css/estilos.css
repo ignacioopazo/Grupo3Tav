@@ -1,0 +1,207 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color:silver;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: whitesmoke;
+    display:flex;
+}
+
+header > div {
+    width: 50%;
+}
+
+.logo {
+    width: 50px;
+    margin-left: 20px;
+    margin-top: 2px;
+}
+
+
+nav > ul {
+    margin-right: 30px; 
+}
+
+nav > ul > li {
+    display: inline;
+    margin-left: 5px;    
+}
+
+nav > ul > li > a {
+    color:black;
+    text-decoration: none;
+}
+
+.contenedor_logo {
+    display: flex;
+    align-items: center;
+}
+
+.contenedor_titulo  {
+    display: flex;
+    align-items: center;
+}
+
+#contenido {
+    width: 90%;
+    margin: 20px auto;
+    min-height: 100vh;
+}
+#contenidoa {
+    width: 90%;
+    margin: 20px auto;
+    min-height: 70vh;
+}
+
+.formulario {
+    text-align: center;
+}
+
+label{
+    display: inline-block;
+    width: 80px;
+  }
+
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.productos .producto {
+    width: 25%;
+    margin-top: 10px;
+}
+
+.productos .producto img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.productos .producto .contenedor {
+    width: 90%;
+    background-color: white;
+    margin: auto;
+}
+
+.productos .producto .contenedor .detalles {
+    padding: 10px;
+}
+
+/* footer */ 
+footer {
+    height: 300px;
+    background-color:gray}
+
+footer > .marcas {
+    width: 100%;
+    height: 80px;
+    background-color:gainsboro;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .logo {
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 80px);
+}
+footer > .logo img {
+    width: 150px;
+}
+
+footer > .marcas > img {
+    width: 70px;
+}
+
+.menu {
+    width: 40px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    display: none;
+}
+
+laber.error {
+    color:darkred;
+}
+
+input.error, select ,textarea {
+    border: 1px solid darkred;
+}
+
+
+/* MEDIA QUERIES*/
+
+/* TABLET*/
+@media (max-width: 1024px) {
+    .productos .producto {
+        width: 50%;     
+    }
+}
+
+/* SMARTPHONES  */
+@media (max-width: 480px) {
+
+    .menu {
+        display: block;
+    }
+
+    .productos .producto {
+        width: 100%;     
+    }
+
+    header {
+        flex-direction: column;
+        height: 60px;
+        overflow: hidden;
+        transition: all 0.8s;
+    }
+
+    header > div {
+        width: 100%;
+    }
+
+    header .contenedor_logo {
+        justify-content: center;
+    }
+
+    header .contenedor_titulo {
+        justify-content: right;
+        position: absolute;
+        margin-right: 5px;
+    }
+
+    header .logo {
+        margin-top: 5px;
+    }
+    nav {
+        justify-content: center;
+    }
+    nav > ul {
+        margin: 0;
+    }      
+    nav > ul > li {
+        display: block;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+
+}
+
+
+
+
+
+

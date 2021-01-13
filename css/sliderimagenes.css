@@ -1,0 +1,18 @@
+/* css solo para el slider*/
+.slider img{
+    max-width: 85%;
+    width: 1000px;
+    height: 630px;
+    align-items: center;
+    position: relative;
+    vertical-align: middle;
+    border: 20;
+    margin-top: 20%;
+    margin: auto;
+    padding: 100;
+    
+}
+.img{
+    max-width: 85%;
+}
+
