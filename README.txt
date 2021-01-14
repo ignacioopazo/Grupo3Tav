@@ -1,3 +1,3 @@
 # Grupo3
 
-un arichivo que solo es de prueba :)
+un arichivo que  es para nuetro proyecto
