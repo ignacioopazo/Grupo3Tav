@@ -1,0 +1,15 @@
+
+.column  > .img{
+top: 50px;
+
+}
+/*texto*/
+.row > .column > .texto{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    text-align: end;
+    padding: 50px;
+    height: 350px;
+    background-color: transparent;
+    right: 100px;
+}
+/*formas de pago*/
